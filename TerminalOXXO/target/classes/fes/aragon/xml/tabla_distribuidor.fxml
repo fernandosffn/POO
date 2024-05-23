@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: RED;" type="Pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controller.tablaDistribuidorController">
+   <children>
+      <TableView fx:id="tblDistribuidor" layoutX="12.0" layoutY="75.0" prefHeight="311.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="clmNombre" prefWidth="115.0" text="Nombre" />
+          <TableColumn fx:id="clmCorreo" prefWidth="93.0" text="Correo" />
+            <TableColumn fx:id="clmTelefono" prefWidth="113.0" text="Telefono" />
+            <TableColumn fx:id="clmDireccion" prefWidth="109.0" text="Direccion" />
+            <TableColumn fx:id="clmOperaciones" prefWidth="147.0" text="Operaciones" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fx:id="iconNuevoDistribuidor" fill="#fff200" glyphName="DOLLAR" layoutX="122.0" layoutY="65.0" onMouseClicked="#eventoNuevoDistribuidor" size="50" text="" />
+      <FontAwesomeIconView fx:id="iconAbrirDistribuidor" fill="#fff200" glyphName="FOLDER_OPEN" layoutX="273.0" layoutY="65.0" onMouseClicked="#eventoAbrirDistribuidor" size="50" text="" />
+      <FontAwesomeIconView fx:id="iconGuardarDistribuidor" fill="#fff200" glyphName="SAVE" layoutX="444.0" layoutY="65.0" onMouseClicked="#eventoGuardarDistribuidor" size="50" />
+   </children>
+</fx:root>
